@@ -5,21 +5,21 @@
 class P2pTunnel < Formula
   desc "Expose localhost to the internet. P2P alternative to ngrok."
   homepage "https://github.com/mihir-kanzariya/p2p-tunnel"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.4.0/p2p-tunnel_darwin_amd64.tar.gz"
-      sha256 "697d85c7deec1feeaf2c13574828810375ade499f21645f080479f2088beb6f1"
+      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.5.0/p2p-tunnel_darwin_amd64.tar.gz"
+      sha256 "54221348667f4efe2554dceb8b118c2bf298c9ad0fbc07efc799430464cf83d5"
 
       define_method(:install) do
         bin.install "p2p-tunnel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.4.0/p2p-tunnel_darwin_arm64.tar.gz"
-      sha256 "6a65683d255accd2118fab54c2b4dd5d577fdfc880a0eb57559e79c73b93e3a0"
+      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.5.0/p2p-tunnel_darwin_arm64.tar.gz"
+      sha256 "3993f6c2773fa886f2c030ef15e9471a4bbc50ed8a2086bd1e68a0ef523413f2"
 
       define_method(:install) do
         bin.install "p2p-tunnel"
@@ -29,15 +29,15 @@ class P2pTunnel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.4.0/p2p-tunnel_linux_amd64.tar.gz"
-      sha256 "02172cede683025e139b0fa7b2e8484aa1519928c77a7bbfe2079c4f537de873"
+      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.5.0/p2p-tunnel_linux_amd64.tar.gz"
+      sha256 "75c688cfe2365200f70cb192e6b804506898c230b5c5e285d793024be431d4cf"
       define_method(:install) do
         bin.install "p2p-tunnel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.4.0/p2p-tunnel_linux_arm64.tar.gz"
-      sha256 "6dbe8a14a8e7fb9f0e5c0fdff29d7ca1c9e7b8a446a3b363b4042004462a5a46"
+      url "https://github.com/mihir-kanzariya/p2p-tunnel/releases/download/v0.5.0/p2p-tunnel_linux_arm64.tar.gz"
+      sha256 "808d230cd6c6aef477c8c8da4025826357a852b91db734d7d05d0036ec13b446"
       define_method(:install) do
         bin.install "p2p-tunnel"
       end
